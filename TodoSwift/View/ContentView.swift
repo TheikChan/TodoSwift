@@ -11,15 +11,21 @@ struct ContentView: View {
     
     @EnvironmentObject var dataStore: DataStore
     
+    @State private var modelType: ModelType? = nil
+    
     var body: some View {
         NavigationView {
             List {
                 ForEach(dataStore.todos) { toDo in
-                    Text(toDo.name)
-                        .font(.title3)
-                        .strikethrough(toDo.completed)
-                        .foregroundStyle(toDo.completed ? .green : Color(.label))
-                }
+                    Button {
+                        modelType = .update(toDo)
+                    } label: {
+                        Text(toDo.name)
+                            .font(.title3)
+                            .strikethrough(toDo.completed)
+                            .foregroundStyle(toDo.completed ? .green : Color(.label))
+                    }
+                }.onDelete(perform: dataStore.deleteTodo)
             }.listStyle(.insetGrouped)
             .toolbar {
                 ToolbarItem(placement: .principal) {
@@ -29,13 +35,13 @@ struct ContentView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        
+                        modelType = .new
                     } label: {
                         Image(systemName: "plus.circle.fill")
                     }
                 }
             }
-        }
+        }.sheet(item: $modelType) { $0 }
     }
 }
 

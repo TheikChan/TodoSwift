@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F4FD9002C8F487400334636 /* TodoFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FD8FF2C8F487400334636 /* TodoFormViewModel.swift */; };
+		8F4FD9022C8F492100334636 /* TodoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FD9012C8F492100334636 /* TodoFormView.swift */; };
+		8F4FD9042C8F563E00334636 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FD9032C8F563E00334636 /* ModelType.swift */; };
 		8FB621162C8F408100F7F41A /* TodoSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB621152C8F408100F7F41A /* TodoSwiftApp.swift */; };
 		8FB621182C8F408100F7F41A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB621172C8F408100F7F41A /* ContentView.swift */; };
 		8FB6211A2C8F408300F7F41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB621192C8F408300F7F41A /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F4FD8FF2C8F487400334636 /* TodoFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoFormViewModel.swift; sourceTree = "<group>"; };
+		8F4FD9012C8F492100334636 /* TodoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoFormView.swift; sourceTree = "<group>"; };
+		8F4FD9032C8F563E00334636 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
 		8FB621122C8F408100F7F41A /* TodoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB621152C8F408100F7F41A /* TodoSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSwiftApp.swift; sourceTree = "<group>"; };
 		8FB621172C8F408100F7F41A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F4FD9052C8F58A400334636 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FB621252C8F417400F7F41A /* DataStore.swift */,
+				8F4FD8FF2C8F487400334636 /* TodoFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F4FD9062C8F58A600334636 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FB621232C8F40C800F7F41A /* ToDo.swift */,
+				8F4FD9032C8F563E00334636 /* ModelType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F4FD9072C8F58A900334636 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F4FD9012C8F492100334636 /* TodoFormView.swift */,
+				8FB621172C8F408100F7F41A /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8FB621092C8F408100F7F41A = {
 			isa = PBXGroup;
 			children = (
@@ -55,12 +88,12 @@
 		8FB621142C8F408100F7F41A /* TodoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				8F4FD9072C8F58A900334636 /* View */,
+				8F4FD9062C8F58A600334636 /* Model */,
+				8F4FD9052C8F58A400334636 /* ViewModel */,
 				8FB621152C8F408100F7F41A /* TodoSwiftApp.swift */,
-				8FB621172C8F408100F7F41A /* ContentView.swift */,
-				8FB621252C8F417400F7F41A /* DataStore.swift */,
 				8FB621192C8F408300F7F41A /* Assets.xcassets */,
 				8FB6211B2C8F408300F7F41A /* Preview Content */,
-				8FB621232C8F40C800F7F41A /* ToDo.swift */,
 			);
 			path = TodoSwift;
 			sourceTree = "<group>";
@@ -146,7 +179,10 @@
 				8FB621242C8F40C800F7F41A /* ToDo.swift in Sources */,
 				8FB621182C8F408100F7F41A /* ContentView.swift in Sources */,
 				8FB621162C8F408100F7F41A /* TodoSwiftApp.swift in Sources */,
+				8F4FD9042C8F563E00334636 /* ModelType.swift in Sources */,
 				8FB621262C8F417400F7F41A /* DataStore.swift in Sources */,
+				8F4FD9022C8F492100334636 /* TodoFormView.swift in Sources */,
+				8F4FD9002C8F487400334636 /* TodoFormViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
