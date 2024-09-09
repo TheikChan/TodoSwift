@@ -12,6 +12,7 @@ struct TodoSwiftApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(DataStore())
         }
     }
 }

@@ -11,6 +11,8 @@
 		8FB621182C8F408100F7F41A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB621172C8F408100F7F41A /* ContentView.swift */; };
 		8FB6211A2C8F408300F7F41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB621192C8F408300F7F41A /* Assets.xcassets */; };
 		8FB6211D2C8F408300F7F41A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6211C2C8F408300F7F41A /* Preview Assets.xcassets */; };
+		8FB621242C8F40C800F7F41A /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB621232C8F40C800F7F41A /* ToDo.swift */; };
+		8FB621262C8F417400F7F41A /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB621252C8F417400F7F41A /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		8FB621172C8F408100F7F41A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8FB621192C8F408300F7F41A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FB6211C2C8F408300F7F41A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FB621232C8F40C800F7F41A /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		8FB621252C8F417400F7F41A /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 			children = (
 				8FB621152C8F408100F7F41A /* TodoSwiftApp.swift */,
 				8FB621172C8F408100F7F41A /* ContentView.swift */,
+				8FB621252C8F417400F7F41A /* DataStore.swift */,
 				8FB621192C8F408300F7F41A /* Assets.xcassets */,
 				8FB6211B2C8F408300F7F41A /* Preview Content */,
+				8FB621232C8F40C800F7F41A /* ToDo.swift */,
 			);
 			path = TodoSwift;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB621242C8F40C800F7F41A /* ToDo.swift in Sources */,
 				8FB621182C8F408100F7F41A /* ContentView.swift in Sources */,
 				8FB621162C8F408100F7F41A /* TodoSwiftApp.swift in Sources */,
+				8FB621262C8F417400F7F41A /* DataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
